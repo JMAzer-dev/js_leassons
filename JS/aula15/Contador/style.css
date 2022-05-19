@@ -1,0 +1,48 @@
+body{
+    background: rgb(57, 154, 219);
+    font-family: monospace;
+}
+header{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+    
+
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+.formu ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 2px;
+
+}
+.formu ul li{
+    padding: 8px 0;
+}
+#botao{
+    background: rgb(56, 197, 240);
+    border: none;
+    padding: 8px;
+    border-style:outset;
+    border-radius: 4px;
+    border-color: rgb(26, 192, 243);
+    font-family:monospace;
+}
+#botao:hover{
+    background: rgb(120, 226, 245);
+    color: white;
+    
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="normalize" href="normalize.css"> 
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="nasc">Ano de Nascimento: <a>*</a></label>
+                <input type="text" name="nasc" id="txtano"/>
+            </p>
+            <p>
+                <label for="sexo">Sexo: <a>*</a></label>
+                <input type="radio" name="sexo" id="sexoM"/> Masculino <input type="radio" name="sexo" id="sexoF"/> Feminino
+            </p>
+            <p>
+                <input type="button" value="Verificar" id="button" onclick="verifica()"/>
+            </p>     
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+        <div id="imagens">
+
+        </div>
+    </section>
+    <footer>
+        <span>&copy; 2022 - JMAzer Desenvolvimento Web</span>
+    </footer>
+    <!-- <script src="idadeVer.js"></script> -->
+    <script src="idadeVer2.js"></script>
+</body>
+</html>

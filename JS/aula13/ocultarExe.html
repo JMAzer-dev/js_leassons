@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+    
+    <style>
+        body{
+            font: normal 16pt Arial;
+            background: darkgray;
+        }
+        div{
+            padding: 5px 0;
+        }
+        .hidden{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+    <script src="exe02.js"></script>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <label for="Nacio">Nacionalidade:</label>
+        <input type="radio" name="Nacio" id="Brasileiro">Brasileiro
+        <input type="radio" name="Nacio" id="Estrangeiro" onclick="selecPais()">Estrangeiro
+        <div id="pais" class="hidden">
+            <label for="origem">Informe o país de orígem: </label>
+            <input type="text" name="origem" id="origem"></input> 
+            <input type="button" value="Confirmar" id="confirm" onclick="confirma()">
+        </div>
+    </form>
+    <div id="res" class="hidden">ds</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos e Arrays</title>
+    
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <script>
+        var paises = ['inglaterra', 'nova zelandia', 'eua', 'uruguai', 'argentina'];
+        var pessoa = {
+            nome:'joao', 
+            idade:20, 
+            sobrenome:'araujo', 
+            andar: function(x){
+                alert('caminhando');
+                x = 9+9
+                return x
+            }
+        }
+        /*
+        paises.push('brasil', 'angola')   
+        console.log(pessoa['sobrenome'])
+        console.log(paises[2])
+        console.log(pessoa.nome)
+        console.log(pessoa.andar())
+        console.log(paises.length)
+        console.log(paises)
+        console.log(paises.toString())
+        console.log(paises.join(' $ '))
+        paises.pop();
+        console.log(paises.join(' - '))
+        paises.shift();
+        console.log(paises.toString());
+        paises.unshift('espanha');
+        console.log(paises.join('\\'))*/
+        paises.sort();
+        console.log(paises.join(' - '));
+        paises.reverse();
+        console.log(paises.toString());
+    </script>
+    
+</body>
+</html>

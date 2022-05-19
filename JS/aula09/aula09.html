@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Informe um numero entre 10 e 20:</p>
+    <label for="text">&raquo;</label>
+    <input type="text" id="numero">
+    <button onclick="verifica()">Verificar</button>
+    <p id="msg"></p>
+    <script>
+        function verifica(){
+            var x = document.getElementById('numero').value;
+        try{ if(x == '') throw 'Digite um valor';
+            if(isNaN(x)) throw 'Precisa informar um número';
+            if(x > 20) throw 'O número precisa ser menor que 20';
+            if(x < 10) throw 'O número precisa ser maior que 10';
+            x = Number(x);
+
+        
+            document.getElementById('msg').innerHTML = `Correto, ${x} está entre 10 e 20.`       
+        } catch(erro){
+            document.getElementById('msg').innerHTML = 'Erro: '+erro;
+        }
+        finally{
+            document.getElementById('numero').value = '';
+        }
+        }
+    </script>
+</body>
+</html>

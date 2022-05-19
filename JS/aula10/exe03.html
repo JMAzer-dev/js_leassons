@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <p class="exe"></p>
+    <p class="exe"></p>
+    <p class="exe"></p>
+    <select id="altera" onchange="funcao()">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+    </select> -->
+    <!-- <input type="text" id="altera" onchange="funcao()"> -->
+    <h1 onmouseover="funcao1(this)" onmouseout="funcao2(this)" onmouseup="funcao3()">Passe o mouse aqui</h1>
+    <script>
+        //document.getElementsByTagName('p')[0].innerHTML = 'Essa é meu paragrafo';
+        // var x = document.getElementsByClassName('exe');
+        // x[0].innerHTML = 'Texto 1';
+        // x[1].innerHTML = 'Texto 2';
+        // x[2].innerHTML = 'Texto 3'
+        // function funcao(){
+        //     alert('Opção alterada')
+        // }
+        // document.getElementById('altera').style.background = 'green'
+        // document.getElementById('altera').style.color = 'white'
+        function funcao1(elemento){
+            elemento.innerHTML = 'OK, sobre o elemento'
+        }
+        function funcao2(elemento){
+            elemento.innerHTML = 'Passe o mouse aqui'
+        }
+        function funcao3(elemento){
+            alert('Não saia do site ainda')
+        }
+    </script>
+</body>
+</html>

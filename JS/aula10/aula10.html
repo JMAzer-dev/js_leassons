@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de DOM</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(124, 173, 173);
+            color: white;
+            font: normal 13pt arial;
+        }
+    </style>
+    <h1>Iniciando estudos com <a class="som">DOM</a></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong id="jum">DOM</strong> em <a class="som">Javascript</a></p>
+    <div name="msg">Clique em mim</div>
+    <p >AQUI NAO E UM TEXTO</p>
+
+    <script>
+        //var mudaClas = document.getElementsByClassName('som')[0];
+        //var d = document.getElementsByName('msg')[0];
+        var corpo = document.body;
+        var p1 = document.getElementsByTagName('p')[0];
+        var x1 = document.querySelector('.som')
+        
+        p1.style.color = 'black';
+        p1.style.background = 'lightblue'
+        corpo.style.background = '#909090';
+        x1.style.color = 'green'
+
+    </script>
+</body>
+</html>

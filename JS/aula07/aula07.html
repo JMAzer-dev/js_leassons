@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font: 200 20pt Arial;
+            background-color: darkblue;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    <script>
+        var d1 = new Date();
+        var d2 = new Date(86400000);
+        console.log(d1.setDate(8))
+        console.log(d1);
+        console.log(d2);
+        console.log(d1.toUTCString());
+        console.log(d1.toDateString());
+        console.log('\'Getdate\': ' + d1.getDate());
+        console.log(d1.getFullYear());
+        console.log(d1.getDay());
+
+            var data = new Date()
+            var dia = data.getDate();
+            var mes = data.getMonth() + 1;
+            var ano = data.getFullYear();
+            var diadehoje = dia+'/'+mes+'/'+ano;
+         
+        alert(`DATA: ${dia}/${mes}/${ano}`)
+        document.write(`${diadehoje}`)
+        
+    </script>
+</body>
+</html>

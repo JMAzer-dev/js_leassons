@@ -1,0 +1,38 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+header h1{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+}
+section div p{
+    font-weight: 500;
+    font-size: 18px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; 
+}
+footer{
+    text-align: center;
+    color: white;
+}
+#icone{
+    float: right;
+    color: silver;
+}
+#desenho{
+    padding-top: 300px;
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="m1">
+
+    </div>
+    <input type="button" value="Timer" onclick="clearTimeout(msg)"/>                    <!--abortar a execução-->
+    <input type="button" value="Voltar" onclick="window.history.back();"/>
+    <script>
+    document.body.style.color = 'red'
+    document.body.style.background = 'silver'
+    document.body.style.fontSize = '22px'
+        // window.localStorage.setItem('chave', 'valor')
+        //window.localStorage.setItem('nome', 'Joao');
+        //window.sessionStorage.setItem('nome', 'Joao');
+        // document.getElementById('msg').innerHTML = window.sessionStorage.getItem('nome');
+        // var janela = window.open('http://facebook.com', 'Facebook', 'width=500, height=400')
+        // janela.opener.document.write('Texto para janela principal')
+        // janela.document.write('Texto para janela ppopup')
+        var intervalo = setInterval(verificaFoco, 1000);
+        var contador = 0;
+        function verificaFoco(){
+            if(document.hasFocus()){
+                contador++;
+                console.log(contador)
+                if(contador >= 10){
+                    msgtimeout()
+                    clearInterval(intervalo)
+                }
+            }
+        }
+          function msgtimeout(){
+            alert('Obrigado!!!')
+        }
+        //var msg = setTimeout(msgtimeout, 4000);
+        //var msg = setInterval(msginterval, 2000)
+        // function msginterval(){
+        //     console.log('Msg via interval')
+        // }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 5;
+        if (n > 5) {
+            console.log('Verdadeiro');
+        } else if(n == 5){  
+            console.log('Equivalencia')  
+        }else{
+            console.log('Falso');
+        }
+        var diasemana = new Date().getDay();
+        switch(diasemana){
+            case 5: 
+                console.log('hoje é sexta')
+                break;
+            case 4:
+                console.log('hoje é quinta')
+                break;
+            case 3: 
+                console.log('hoje é quarta')
+                break;
+            case 2: 
+                console.log('hoje é terca')
+                break;
+            case 1: 
+                console.log('hoje é segunda')
+                break;
+            case 0: 
+                console.log('hoje é domingo')
+                break;    
+            default:
+                console.log('hoje é sabado')
+        }
+        var linguagens = ['PHP', 'JAVA', 'C++', "ASP", "PYTHON"]
+        /*for(i = 0; i < linguagens.length; i++){
+            if(i == 2) continue;//ou break pra encerrar.
+            console.log(linguagens[i])
+        }*/
+        var contador = 0
+        while(contador < linguagens.length){ 
+            console.log(linguagens[contador])
+            contador++;
+        }
+
+    </script>
+</body>
+</html>
